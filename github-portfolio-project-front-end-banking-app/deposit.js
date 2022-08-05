@@ -2,10 +2,12 @@ function Deposit(){
   const ctx = React.useContext(UserContext);
 
   return (
-    <>
-    <h1>Deposit<br />
-      {JSON.stringify(ctx)}
-    </h1>
-    </>
-  )
+    <Card
+    txtcolor="black"
+    header="BadBank Deposit"
+    title="Deposit"
+    text={JSON.stringify(ctx)}
+    body={(<img src="bank.png" className="img-fluid" alt="Responsive image" />)} 
+    /> 
+  );
 }
