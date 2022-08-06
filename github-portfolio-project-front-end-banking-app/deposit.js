@@ -1,3 +1,5 @@
+const React = require("react");
+
 function Deposit(){
   const ctx = React.useContext(UserContext);
 
@@ -10,4 +12,4 @@ function Deposit(){
     body={(<img src="bank.png" className="img-fluid" alt="Responsive image" />)} 
     /> 
   );
-}
+ }
