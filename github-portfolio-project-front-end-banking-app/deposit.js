@@ -1,5 +1,3 @@
-const React = require("react");
-
 function Deposit(){
   const ctx = React.useContext(UserContext);
 

@@ -46,12 +46,13 @@ function Login(){
                 Password <br/>
                 <input type="password" className="form-control" id="password" placeholder="Enter Password" value={password} onChange={e => setPassword(e.currentTarget.value)}/>
                 <br/>
-                <button type="submit" className="btn btn-light" onClick={handleCreate}>Login</button>
+                <button type="submit" className="btn btn-light" onClick={handleLogin}>Login</button>
+                <br/>
+                {(showError) ? 'Please check email or password' : ''}
                 </>
                 ):(
                 <>
-                <h5>Success</h5>
-                <button type="submit" className="btn btn-light" onClick={clearForm}>Login Another User</button>
+                <h5>You Are Logged In</h5>
                 </>
               )}
           />
